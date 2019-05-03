@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+    function myfunc()
+    {
+      var v1=Number(document.getElementById("f1").value);
+      if(v1==1)
+      {
+          alert(v1+"belongs to Jan");
+      }
+      else if(v1==2)
+      {
+        alert(v1+"belongs to Fed");
+      }
+      else if(v1==3)
+      {
+        alert(v1+"belongs to Mar");
+      }
+      else if(v1==4)
+      {
+        alert(v1+"belongs to Apr");
+      }
+      else if(v1==5)
+      {
+        alert(v1+"belongs to May");
+      }
+      else{
+          alert("please enter between 5 only")
+      }
+    }
+    </script>
+</head>
+<body>
+    Enter input:<input type="number" id="f1">
+    <button onclick="myfunc()">Click me</button>
+    <label>hint:Enter up to 5numbers to get month</label>
+</body>
+</html>
